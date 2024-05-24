@@ -1,6 +1,6 @@
 "use client";
 
-import Image from "next/image";
+// import Image from "next/image";
 import { Button } from "./ui/button";
 import {
   HeartIcon,
@@ -29,19 +29,7 @@ const Header = () => {
   const handleSignInClick = () => signIn();
 
   return (
-    <div className="flex justify-between px-5 pt-6">
-      <Link href="/">
-        <div className="relative h-[30px] w-[100px]">
-          <Image
-            src="/logo.png"
-            alt="FSW Foods"
-            sizes="100%"
-            fill
-            className="object-cover"
-          />
-        </div>
-      </Link>
-
+    <div className="flex justify-end px-5 pt-6">
       <Sheet>
         <SheetTrigger asChild>
           <Button
